@@ -20,35 +20,6 @@ else
 document.write("Your visits with this browser: " + localStorage.pagecount + " times.");
 </script> 
 <br>
-<p>Timer <output id="result"></output></p>
-<button onclick="startWorker()">Start timer</button> 
-<button onclick="stopWorker()">Stop timer</button>
-<br />
-<script>
-var w;
-
-function startWorker()
-{
-if(typeof(Worker)!=="undefined")
-  {
-  if(typeof(w)=="undefined")
-  {
-  w=new Worker("/example/html5/demo_workers.js");
-  }
-  w.onmessage = function (event) {
-    document.getElementById("result").innerHTML=event.data;
-    };
-  }
-else
-  {
-  document.getElementById("result").innerHTML="Sorry, your browser does not support Web Workers...";
-  }
-}
-
-function stopWorker()
-{ 
-w.terminate();
-}
-</script>
+<button>Start timer</button> 
 </body>
 </html>
