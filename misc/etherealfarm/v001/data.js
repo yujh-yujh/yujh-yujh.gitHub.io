@@ -1,14 +1,17 @@
 /*
 Ethereal Farm
 Copyright (C) 2020  Lode Vandevenne
+
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
+
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
+
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
@@ -811,12 +814,14 @@ var berry2_5 = registerBerry2('gooseberry', getBerry2Cost(5), getBerry2Prod(5), 
 var berry2_6 = registerBerry2('grape', getBerry2Cost(6), getBerry2Prod(6), grape);
 var berry2_7 = registerBerry2('honeyberry', getBerry2Cost(7), getBerry2Prod(7), honeyberry);
 var berry2_8 = registerBerry2('juniper', getBerry2Cost(8), getBerry2Prod(8), juniper);
+
 // mushrooms: give spores
 crop2_register_id = 50;
 var mush2_0 = registerMushroom2('champignon', getMushroom2Cost(0), getMushroom2Prod(0), champignon);
 var mush2_1 = registerMushroom2('morel', getMushroom2Cost(1), getMushroom2Prod(1), morel);
 var mush2_2 = registerMushroom2('amanita', getMushroom2Cost(2), getMushroom2Prod(2), amanita);
 var mush2_3 = registerMushroom2('portobello', getMushroom2Cost(3), getMushroom2Prod(3), portobello);
+
 // flowers: give boost to neighbors
 crop2_register_id = 75;
 var flower2_0 = registerFlower2('clover', getFlower2Cost(0), Num(0.1), clover);
